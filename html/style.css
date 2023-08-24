@@ -17,7 +17,7 @@ header{
     display: block;
     margin: auto; 
     width: 250px;
-    height: 340px;
+    height: 320px;
     margin-top: 40px;
     text-align: center;
     border-radius: 15px;
@@ -26,15 +26,16 @@ header{
 }
 header h2{
     margin-top: 20px;
-    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-top: 40px;
     display:inline-flex ;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-shadow: #7ed957;
     color: #282f21;
     background-color: #aae690;
     width: 260px;
     padding: 8px;
+    text-shadow: 1px 1px 1px black;
    
 }
 header p{
@@ -44,45 +45,107 @@ header p{
     margin-right: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-main{
-    margin: 0px;
-    background-color: #aae690;
-}
-.imagem{
-    padding: 10px;
-    background-color:rgb(248, 249, 249) ;
-    width: 170px ;
-    height: 190px;
+@media screen and (max-width:568px ){
 
+    main{
+        margin: 0px;
+        background-color: #aae690;
+    }
+
+    .imagem{
+        padding: 10px;
+        background-color:rgb(248, 249, 249) ;
+        width: 170px ;
+        height: 190px;
+
+    }
+
+    .imagem img{
+        margin-top: 15px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.335);
+        border-radius: 15px; 
+        width: 150px;
+        height: 170px;
+        
+        
+    }
+    .bloco{
+        margin-top: -50px;
+    
+        width:240px ;
+        height: 190px;
+        
+        
+    }
+    .bloco p{
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #agrupar{
+        
+        margin-right: 10px;
+        display: inline-block;
+    }
 }
 
-.imagem img{
-    margin-top: 15px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.335);
-    border-radius: 15px; 
-    width: 150px;
-    height: 170px;
+@media screen and (min-width:569px ){
+    body{
+        text-align: center;
+    }
+    main{
+        background-color:rgb(248, 249, 249) ;
+    }
     
-    
-}
-.bloco{
-    margin-top: -50px;
+    .imagem{
+        margin: 0px;
+        display: block;
+        background-color: rgb(248, 249, 249);
+    }
    
+
+    .imagem img{
+        margin-top: 15px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.335);
+        border-radius: 15px; 
+        width: 200px;
+        height: 230px;
+        
+        
+    }
+    .bloco{
+        margin-top: 15px;
+        background-color: #7ed957;
+    }
     
-    width: 240px ;
-    height: 190px;
-    
-    
+    .bloco p{
+        padding: 15px;
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #agrupar{
+        display: inline-table;
+
+    }
+   
+
+
+
+
+
+
+
+
+
+
 }
-.bloco p{
-    text-align: justify;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#agrupar{
-    
-    margin-right: 10px;
-    display: inline-block;
-}
+
+
+
+
+
+
+
+
 
 section{
     text-align: center;
@@ -117,7 +180,14 @@ ul li{
     text-align: left;
     font-size: 18px;
 }
-footer {
+.fundo{
+    margin-left: -8px;
+    margin-right: -8px;
+    background-color:#282f21 ;
+    padding: 10px;
+}
+
+.fundo footer {
     margin:auto ;
     display: block;
     text-align: center;
@@ -132,27 +202,28 @@ footer {
     border-radius: 20px;
 
 }
-footer h1{
-    font-family: Arial, Helvetica, sans-serif;
+.fundo footer h1{
+    
+    font-family: sans-serif;
     padding: 20px;
     font-size: 40px;
     text-align:center ;
     text-shadow: 1px 1px 1px white;
     margin: -10px;
 }
-footer a{
+.fundo footer a{
     margin-top: 20px;
     font-size: 20px;
     font-weight: 700;
-    background-color: #282f21;
-    color: #7ed957;
+    background-color:#282f21 ;
+    color:#7ed957;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
     padding: 8px;
     border-radius: 15px;
     
 
 }
-footer a:hover{
+.fundo footer a:hover{
     background-color: white;
     
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
